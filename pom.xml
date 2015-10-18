@@ -3,18 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>tech.sirwellington.alchemy</groupId>
     <artifactId>alchemy</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <name>${project.artifactId}</name>
     <packaging>pom</packaging>
 
 
     <url>https://github.com/SirWellington/alchemy</url>
     <description>
-        Part of the Alchemy collection.
-
-        Write what you mean, mean what you write.
-
-        Alchemy Annotations allow clearer documentation of intent of your code.
+        The Alchemy Collection; Making Java fun again.
     </description>
 
     <organization>
@@ -120,6 +116,28 @@
 
     <build>
         <plugins>
+            
+            <!--Download Javadoc Stylesheet-->
+            <plugin>
+                <groupId>com.googlecode.maven-download-plugin</groupId>
+                <artifactId>download-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <!--<version>1.2.2-SNAPSHOT</version>-->
+                <executions>
+                    <execution>
+                        <id>download-javadoc-stylesheet</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>wget</goal>
+                        </goals>
+                        <configuration>
+                            <url>https://raw.githubusercontent.com/SirWellington/alchemy/master/javadoc-style-sheet.css</url>
+                            <outputDirectory>${project.build.directory}/resources/css</outputDirectory>
+                            <!--<failOnFailure>false</failOnFailure>-->
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
 
             <!--Javadoc-->
             <plugin>
@@ -132,7 +150,7 @@
                     <links>
                         <link>http://docs.oracle.com/javase/8/docs/api/</link>
                     </links>
-                    <stylesheetfile>${basedir}/javadoc-style-sheet.css</stylesheetfile>
+                    <stylesheetfile>${project.build.directory}/resources/css/javadoc-style-sheet.css</stylesheetfile>
                 </configuration>
                 <executions>
                     <execution>
@@ -168,7 +186,6 @@
                 <version>0.7.5.201505241946</version>
 
                 <executions>
-
                     <execution>
                         <id>default-prepare-agent</id>
                         <goals>
