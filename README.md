@@ -12,14 +12,14 @@ More Coming Soon...
 
 # The Elements
 
-
-# License
-
-This Software is licensed under the Apache 2.0 License
-
-http://www.apache.org/licenses/LICENSE-2.0
-
 # Release Notes
 
 ## 1.0
 + Initial Release
+
+
+# License
+
+This Software, and all sub-projects, are licensed under the Apache 2.0 License
+
+http://www.apache.org/licenses/LICENSE-2.0
