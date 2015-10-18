@@ -7,7 +7,7 @@ More Coming Soon...
 
 # Requirements
 
-+ JDK 8
++ Java 8
 + Maven
 
 # The Elements
