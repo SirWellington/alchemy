@@ -118,6 +118,21 @@
                 <scope>test</scope>
             </dependency>
 
+            <!--Apache HTTP Client-->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>4.5.1</version>
+            </dependency>
+        
+            <!--Google Guava-->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>18.0</version>
+            </dependency>
+        
+
         </dependencies>
     </dependencyManagement>
 
