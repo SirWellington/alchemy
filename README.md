@@ -3,22 +3,35 @@ Alchemy
 
 [![Build Status](https://travis-ci.org/SirWellington/alchemy.svg)](https://travis-ci.org/SirWellington/alchemy)
 
-More Coming Soon...
 
-# Requirements
+# The Four Elements of **Alchemy Design**
+
+For the design of Alchemy, we take our inspiration from Mother Nature, and the four elements of nature. We call this, **Alchemy Design**.
+
+# Earth
+
+Alchemy is as Solid and ___ as the Earth.
+We want to provide you with libraries that form the foundation for the Software that you write. That means
+
+
+# Wind
+
+# Water
+
+# Fire
+
+## Requirements
 
 + Java 8
 + Maven
 
-# The Elements
+## Release Notes
 
-# Release Notes
-
-## 1.0
+### 1.0
 + Initial Release
 
 
-# License
+## License
 
 This Software, and all sub-projects, are licensed under the Apache 2.0 License
 
