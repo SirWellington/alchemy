@@ -59,9 +59,12 @@
     <!-- END OF POM METADATA -->
 
     <properties>
+        
+        <!--Java Compiler Properties-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        
     </properties>
 
 
@@ -130,6 +133,13 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>18.0</version>
+            </dependency>
+            
+            <!--Apache Thrift-->
+            <dependency>
+                <groupId>org.apache.thrift</groupId>
+                <artifactId>libthrift</artifactId>
+                <version>0.9.3</version>
             </dependency>
         
 
