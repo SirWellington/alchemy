@@ -8,7 +8,7 @@ The Alchemy Collection [![Build Status](https://travis-ci.org/SirWellington/alch
 
 # Alchemy Design
 
-### We take our inspiration from Mother Nature, specifically the four elements of nature. We call this, **Alchemy Design**.
+#### We take our inspiration from Mother Nature, specifically the four elements of nature. We call this, **Alchemy Design**.
 
 # Earth
 
@@ -40,7 +40,7 @@ This means that our code is thoroughly tested early and often.
 >TODO: Add better examples
 
 ```java
-String name = one(integers(-))
+String name = one(alphabeticStrings());
 
 assertThrows(() -> database.save(name))
     .isInstanceOf(IllegalArgumentException.class);
