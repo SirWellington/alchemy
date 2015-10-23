@@ -59,12 +59,12 @@
     <!-- END OF POM METADATA -->
 
     <properties>
-        
+
         <!--Java Compiler Properties-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        
+
     </properties>
 
 
@@ -113,7 +113,8 @@
                 <artifactId>slf4j-api</artifactId>
                 <version>1.7.12</version>
             </dependency>
-
+            
+            <!--Simple Logger for Test Runs-->
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-simple</artifactId>
@@ -127,7 +128,7 @@
                 <artifactId>httpclient</artifactId>
                 <version>4.5.1</version>
             </dependency>
-        
+
             <!--Google Guava-->
             <dependency>
                 <groupId>com.google.guava</groupId>
@@ -135,13 +136,20 @@
                 <version>18.0</version>
             </dependency>
             
+            <!--Google GSON-->
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>2.4</version>
+            </dependency>
+
             <!--Apache Thrift-->
             <dependency>
                 <groupId>org.apache.thrift</groupId>
                 <artifactId>libthrift</artifactId>
                 <version>0.9.3</version>
             </dependency>
-        
+
 
         </dependencies>
     </dependencyManagement>
