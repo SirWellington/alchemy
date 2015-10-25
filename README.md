@@ -8,44 +8,56 @@ Alchemy [![Build Status](https://travis-ci.org/SirWellington/alchemy.svg)](https
 
 #### We take our inspiration from Mother Nature, specifically the four elements of nature. We call this, **Alchemy Design**.
 
+
 # Earth
 
-### Alchemy as is *Solid* and *Dependable* as Earth.
+### Alchemy is as *Solid* and *Dependable* as Earth.
 
 ```java
 assertThrows(() -> database.save(user));
 ```
 
-We aim to provide you with libraries as **dependable** as the floor beneath your feet that you implicitly trust to not collapse.
+We aim to provide you with libraries as **dependable** as the floor beneath your feet, that you implicitly trust to not collapse.
 This means that our code is thoroughly tested early and often.
 
 # Wind
 
-### Alchemy as is *Swift* and *Undetectable* as Wind.
-
-We strive to be **breezy** yet **inconspicuous** like Southern California winds.
+### Alchemy is as *Swift* and *Undetectable* as Wind.
 
 ```java
 String randomUsername = one(alphabeticStrings());
 ```
 
+We strive to be **breezy** yet **inconspicuous** like Southern California winds.
+
 We believe great code helps you get the job done, without getting in the way.
+
 
 # Water
 
-### Alchemy as is *Fluid* and *Simple* as Water.
+### Alchemy is as *Fluid* and *Simple* as Water.
 ```java
 checkThat(firstName, lastName, username)
     .are(nonEmptyString())
     .are(stringWithLengthAtLeast(1));
 ```
+
 The best code is **simple** and **fluid** as, a river flowing down a stream. It flows as you would intuitively expect.
+
 
 # Fire
 
-### Alchemy as is *Powerful* and *Invigorating* as Fire.
+### Alchemy is as *Powerful* and *Invigorating* as Fire.
 
 We want you to feel the power as it flows through your hands when you write code with us.
+
+```java
+Device newDevice = http.begin()
+                       .body(device)
+                       .post()
+                       .expecting(String.class)
+                       .at("https://iot.io/api/devices/");
+```
 
 These Design Principles guide the code that we write. As such you will see that many of our projects use the Fluid Language Style to make writing code more expressive and much closer to its English counterpart. We also want you to feel **good** when you write code with us. We want you to feel **powerful**.
 
@@ -68,8 +80,10 @@ These Design Principles guide the code that we write. As such you will see that 
 >TODO: Add better examples
 
 ```java
+//Generate random data
 String name = one(alphabeticStrings());
 
+//Quickly assert error conditions
 assertThrows(() -> database.save(name))
     .isInstanceOf(IllegalArgumentException.class);
 ```
@@ -91,11 +105,7 @@ public int getTotalPointsForUser(String user) throws BadArgumentException, HttpE
 
 ### Call REST Services
 ```java
-String id = http.begin()
-                .body(device)
-                .post()
-                .expecting(String.class)
-                .at("https://iot.io/api/devices/");
+
 
 http.begin()
     .get()
@@ -114,9 +124,11 @@ Just remember, this is only the beginning. These libraries will be continuously 
 + Maven
 
 ## Release Notes
+> These release notes are for the pom.xml
 
 ### 1.1
 + Dependency Updates
++ Adding custom Javadoc Styling
 
 ### 1.0
 + Initial Release
