@@ -4,7 +4,7 @@ Alchemy [![Build Status](https://travis-ci.org/SirWellington/alchemy.svg)](https
 ![Alchemy Logo](https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Logo/Alchemy-Logo-v3-name.png)
 
 
-### Making Java *fun* again.
+## Making Java *fun* again.
 
 
 
