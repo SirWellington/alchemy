@@ -143,11 +143,3 @@ Just remember, this is only the beginning. These libraries will be continuously 
 This Software, and all sub-projects, are licensed under the Apache 2.0 License
 
 http://www.apache.org/licenses/LICENSE-2.0
-
-<!-- Styling Code -->
-<style>
-h3 {
-    color: #F85F73;
-    font-size: 20px;
-}
-</style>
