@@ -173,7 +173,7 @@
                         <configuration>
                             <url>https://raw.githubusercontent.com/SirWellington/alchemy/master/javadoc-style-sheet.css</url>
                             <outputDirectory>${project.build.directory}/resources/css</outputDirectory>
-                            <!--<failOnFailure>false</failOnFailure>-->
+                            <failOnError>false</failOnError>
                         </configuration>
                     </execution>
                 </executions>
