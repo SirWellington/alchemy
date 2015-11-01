@@ -68,13 +68,13 @@ These Design Principles guide the code that we write. As such you will see that 
 
 # Project List
 
-| Name | Features | Link
-| -----| ----- | ------ |
-| Alchemy Annotations   | Explicit Documentation                  | https://github.com/SirWellington/alchemy-annotations
-| Alchemy Arguments     | Check your assumptions    | https://github.com/SirWellington/alchemy-arguments
-| Alchemy Generator     | Generate Data             | https://github.com/SirWellington/alchemy-generator
-| Alchemy Test          | Test your code            | https://github.com/SirWellington/alchemy-test
-| Alchemy HTTP          | Call REST Services        | https://github.com/SirWellington/alchemy-http
+| Name | Features
+| -----| ----- |
+| [Alchemy Annotations](https://github.com/SirWellington/alchemy-annotations) | Explicit Documentation              
+| [Alchemy Arguments](https://github.com/SirWellington/alchemy-arguments)     | Check your assumptions    
+| [Alchemy Generator](https://github.com/SirWellington/alchemy-generator)     | Generate Data
+| [Alchemy Test](https://github.com/SirWellington/alchemy-test)               | Test your code
+| [Alchemy HTTP](https://github.com/SirWellington/alchemy-http)               | Call REST Services
 
 
 ## Highlights
