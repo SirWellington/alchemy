@@ -68,13 +68,13 @@ These Design Principles guide the code that we write. As such you will see that 
 
 # Project List
 
-| Name | Purpose | Link
+| Name | Features | Link
 | -----| ----- | ------ |
-| Alchemy Annotations   | Document
-| Alchemy Arguments     | Check your assumptions
-| Alchemy Generator     | Generate Data
-| Alchemy Test          | Test your code
-| Alchemy HTTP          | Call REST Services
+| Alchemy Annotations   | Explicit Documentation                  | https://github.com/SirWellington/alchemy-annotations
+| Alchemy Arguments     | Check your assumptions    | https://github.com/SirWellington/alchemy-arguments
+| Alchemy Generator     | Generate Data             | https://github.com/SirWellington/alchemy-generator
+| Alchemy Test          | Test your code            | https://github.com/SirWellington/alchemy-test
+| Alchemy HTTP          | Call REST Services        | https://github.com/SirWellington/alchemy-http
 
 
 ## Highlights
@@ -111,13 +111,13 @@ public int getTotalPointsForUser(String user) throws BadArgumentException, HttpE
 ```java
 
 
-http.begin()
-    .get()
-    .usingQueryParam("device", id)
-    .expecting(Device.class)
-    .onSuccess(d -> LOG.info("Device created: {}", d))
-    .onFailure(ex -> LOG.error("Failed to get device with ID {}", id))
-    .at("https://iot.io/api/devices/query");
+http.go()
+    .post()
+    .body(device)
+    .expecting(String.class)
+    .onSuccess(id -> LOG.info("Device with id {} created", id))
+    .onFailure(ex -> LOG.error("Failed to create Device {}", device, ex))
+    .at("https://iot.io/api/devices/");
 ```
 
 Just remember, this is only the beginning. These libraries will be continuously improved and updated.
@@ -133,6 +133,7 @@ Just remember, this is only the beginning. These libraries will be continuously 
 ### 1.1
 + Dependency Updates
 + Adding custom Javadoc Styling
++ Adding Logo and Branding
 
 ### 1.0
 + Initial Release
