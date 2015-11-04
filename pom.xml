@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    
     <groupId>tech.sirwellington.alchemy</groupId>
     <artifactId>alchemy</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <name>${project.artifactId}</name>
     <packaging>pom</packaging>
 
@@ -57,11 +58,14 @@
     </prerequisites>
 
     <!-- END OF POM METADATA -->
-
+    
     <properties>
+
+        <!--Java Compiler Properties-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+
     </properties>
 
 
@@ -110,13 +114,50 @@
                 <artifactId>slf4j-api</artifactId>
                 <version>1.7.12</version>
             </dependency>
+            
+            <!--Simple Logger for Test Runs-->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>1.7.12</version>
+                <scope>test</scope>
+            </dependency>
+
+            <!--Apache HTTP Client-->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>4.5.1</version>
+            </dependency>
+
+            <!--Google Guava-->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>18.0</version>
+            </dependency>
+            
+            <!--Google GSON-->
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>2.4</version>
+            </dependency>
+
+            <!--Apache Thrift-->
+            <dependency>
+                <groupId>org.apache.thrift</groupId>
+                <artifactId>libthrift</artifactId>
+                <version>0.9.3</version>
+            </dependency>
+
 
         </dependencies>
     </dependencyManagement>
 
     <build>
         <plugins>
-            
+
             <!--Download Javadoc Stylesheet-->
             <plugin>
                 <groupId>com.googlecode.maven-download-plugin</groupId>
@@ -133,7 +174,7 @@
                         <configuration>
                             <url>https://raw.githubusercontent.com/SirWellington/alchemy/master/javadoc-style-sheet.css</url>
                             <outputDirectory>${project.build.directory}/resources/css</outputDirectory>
-                            <!--<failOnFailure>false</failOnFailure>-->
+                            <failOnError>false</failOnError>
                         </configuration>
                     </execution>
                 </executions>
@@ -184,6 +225,12 @@
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.7.5.201505241946</version>
+                <configuration>
+                    <excludes>
+                        <!--Exclude Exceptions-->
+                        <exclude>**/*Exception.*</exclude>
+                    </excludes>
+                </configuration>
 
                 <executions>
                     <execution>
