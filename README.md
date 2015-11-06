@@ -21,7 +21,7 @@ Alchemy [![Build Status](https://travis-ci.org/SirWellington/alchemy.svg)](https
 assertThrows(() -> database.save(user));
 ```
 
-We aim to provide you with libraries as **dependable** as the floor beneath your feet, that you implicitly trust to not collapse.
+We aim to provide you with libraries as **dependable** as the floor beneath your feet that you implicitly trust to not collapse.
 This means that our code is thoroughly tested early and often.
 
 # Wind
@@ -32,7 +32,7 @@ This means that our code is thoroughly tested early and often.
 String randomUsername = one(alphabeticStrings());
 ```
 
-We strive to be **breezy** yet **inconspicuous** like Southern California winds.
+We strive to be **breezy** yet **inconspicuous** like the air you breathe.
 
 We believe great code helps you get the job done, without getting in the way.
 
