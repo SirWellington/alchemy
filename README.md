@@ -83,12 +83,18 @@ These Design Principles guide the code that we write. As such you will see that 
 ### Test your code
 
 ```java
-//Generate random data
-String name = one(alphabeticStrings());
+//Runs the test 50 times
+@Repeat(50)
+@Test
+public void testDatabase()
+{
+    //Generate random data
+    String name = one(alphabeticStrings());
 
-//Quickly assert error conditions
-assertThrows(() -> database.save(name))
-    .isInstanceOf(SQLException.class);
+    //Quickly assert error conditions
+    assertThrows(() -> database.save(name))
+        .isInstanceOf(SQLException.class);
+}
 ```
 
 ### Check your assumptions
