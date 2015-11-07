@@ -18,7 +18,8 @@ Alchemy [![Build Status](https://travis-ci.org/SirWellington/alchemy.svg)](https
 ### Alchemy is as *Solid* and *Dependable* as Earth.
 
 ```java
-assertThrows(() -> database.save(user));
+assertThrows(() -> database.save(user))
+    .isInstanceOf(SQLException.class);
 ```
 
 We aim to provide you with libraries as **dependable** as the floor beneath your feet that you implicitly trust to not collapse.
@@ -56,14 +57,14 @@ The best code is **simple** and **fluid** as, a river flowing down a stream. It 
 We want you to feel the power as it flows through your hands when you write code with us.
 
 ```java
-Device newDevice = http.begin()
-                       .body(device)
+Device newDevice = http.go()
                        .post()
+                       .body(device)
                        .expecting(String.class)
                        .at("https://iot.io/api/devices/");
 ```
 
-These Design Principles guide the code that we write. As such you will see that many of our projects use the Fluid Language Style to make writing code more expressive and much closer to its English counterpart. We also want you to feel **good** when you write code with us. We want you to feel **powerful**.
+These Design Principles guide the code that we write. As such you will see that many of our projects use the Fluid Language Style to make writing code more expressive and much closer to English. We also want you to feel **good** when you write code with us. We want you to feel **powerful**.
 
 
 # Project List
@@ -81,36 +82,33 @@ These Design Principles guide the code that we write. As such you will see that 
 
 ### Test your code
 
->TODO: Add better examples
-
 ```java
 //Generate random data
 String name = one(alphabeticStrings());
 
 //Quickly assert error conditions
 assertThrows(() -> database.save(name))
-    .isInstanceOf(IllegalArgumentException.class);
+    .isInstanceOf(SQLException.class);
 ```
 
 ### Check your assumptions
 
 ```java
-public int getTotalPointsForUser(String user) throws BadArgumentException, HttpException
+public int getTotalPointsForUser(String user) throws HttpException
 {
     checkThat(user)
-        .throwing(BadArgumentException.class)
         .is(notNull())
         .is(nonEmptyString())
-        .is(stringWithLengthAtLeast(3));
+        .is(stringWithLengthAtLeast(3))
+        .is(userInDatabase()); //Custom Assertion
 
     //Proceed safely...
 }
 ```
 
 ### Call REST Services
+
 ```java
-
-
 http.go()
     .post()
     .body(device)
