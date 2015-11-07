@@ -38,7 +38,7 @@ We strive to be **breezy** yet **inconspicuous** like the air you breathe.
 We believe great code helps you get the job done, without getting in the way.
 
 
-# Water
+# Water <img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Water/Water-02.png" width="100">
 
 ### Alchemy is as *Fluid* and *Simple* as Water.
 ```java
