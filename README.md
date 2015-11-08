@@ -13,7 +13,8 @@ Alchemy [![Build Status](https://travis-ci.org/SirWellington/alchemy.svg)](https
 #### We take our inspiration from Mother Nature, specifically the four elements of nature. We call this, **Alchemy Design**.
 
 
-# Earth
+# Earth 
+<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Earth/Earth.png" width="250"> 
 
 ### Alchemy is as *Solid* and *Dependable* as Earth.
 
@@ -25,7 +26,8 @@ assertThrows(() -> database.save(user))
 We aim to provide you with libraries as **dependable** as the floor beneath your feet that you implicitly trust to not collapse.
 This means that our code is thoroughly tested early and often.
 
-# Wind
+# Wind 
+<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Wind/Wind.png" width="250"> 
 
 ### Alchemy is as *Swift* and *Undetectable* as Wind.
 
@@ -38,7 +40,10 @@ We strive to be **breezy** yet **inconspicuous** like the air you breathe.
 We believe great code helps you get the job done, without getting in the way.
 
 
-# Water <img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Water/Water-02.png" width="100">
+
+# Water
+ <img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Water/Water.png" width="250"> 
+
 
 ### Alchemy is as *Fluid* and *Simple* as Water.
 ```java
@@ -51,6 +56,7 @@ The best code is **simple** and **fluid** as, a river flowing down a stream. It 
 
 
 # Fire
+<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Fire/Fire.png" width="250"> 
 
 ### Alchemy is as *Powerful* and *Invigorating* as Fire.
 
