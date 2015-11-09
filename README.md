@@ -63,11 +63,10 @@ The best code is **simple** and **fluid** as a river flowing down a stream. It f
 We want you to feel the power as it flows through your hands when you write code with us.
 
 ```java
-Device newDevice = http.go()
-                       .post()
-                       .body(device)
-                       .expecting(String.class)
-                       .at("https://iot.io/api/devices/");
+Coffee myCoffee = http.go()
+					  .get()
+					  .expecting(Coffee.class)
+					  .at("http://aroma.coffee/orders?orderNumber=99");
 ```
 
 These Design Principles guide the code that we write. As such you will see that many of our projects use the Fluid Language Style to make writing code more expressive and much closer to English. We also want you to feel **good** when you write code with us. We want you to feel **powerful**.
@@ -121,13 +120,11 @@ public int getTotalPointsForUser(String user) throws HttpException
 ### Call REST Services
 
 ```java
-http.go()
-    .post()
-    .body(device)
-    .expecting(String.class)
-    .onSuccess(id -> LOG.info("Device with id {} created", id))
-    .onFailure(ex -> LOG.error("Failed to create Device {}", device, ex))
-    .at("https://iot.io/api/devices/");
+Device newDevice = http.go()
+                       .post()
+                       .body(device)
+                       .expecting(String.class)
+                       .at("https://iot.io/api/devices/");
 ```
 
 Just remember, *this is only the beginning*. These libraries will be continuously improved and updated.
