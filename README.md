@@ -123,7 +123,7 @@ public int getTotalPointsForUser(String user) throws HttpException
 Device newDevice = http.go()
                        .post()
                        .body(device)
-                       .expecting(String.class)
+                       .expecting(Device.class)
                        .at("https://iot.io/api/devices/");
 ```
 
