@@ -13,8 +13,8 @@ Alchemy [![Build Status](https://travis-ci.org/SirWellington/alchemy.svg)](https
 #### We take our inspiration from Mother Nature, specifically the four elements of nature. We call this, **Alchemy Design**.
 
 
-# Earth 
-<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Earth/Earth.png" width="250"> 
+# Earth
+<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Earth/Earth.png" width="250">
 
 ### Alchemy is as *Solid* and *Dependable* as Earth.
 
@@ -23,11 +23,11 @@ assertThrows(() -> database.save(user))
     .isInstanceOf(SQLException.class);
 ```
 
-We aim to provide you with libraries as **dependable** as the floor beneath your feet that you implicitly trust to not collapse.
+We aim to provide you with libraries as **solid** and **dependable** as the floor beneath your feet that you implicitly trust to not collapse.
 This means that our code is thoroughly tested early and often.
 
-# Wind 
-<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Wind/Wind.png" width="250"> 
+# Wind
+<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Wind/Wind.png" width="250">
 
 ### Alchemy is as *Swift* and *Undetectable* as Wind.
 
@@ -42,7 +42,7 @@ We believe great code helps you get the job done, without getting in the way.
 
 
 # Water
- <img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Water/Water.png" width="250"> 
+ <img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Water/Water.png" width="250">
 
 
 ### Alchemy is as *Fluid* and *Simple* as Water.
@@ -52,11 +52,11 @@ checkThat(firstName, lastName, username)
     .are(stringWithLengthAtLeast(1));
 ```
 
-The best code is **simple** and **fluid** as, a river flowing down a stream. It flows as you would intuitively expect.
+The best code is **simple** and **fluid** as a river flowing down a stream. It flows as you would intuitively expect.
 
 
 # Fire
-<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Fire/Fire.png" width="250"> 
+<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Fire/Fire.png" width="250">
 
 ### Alchemy is as *Powerful* and *Invigorating* as Fire.
 
@@ -130,7 +130,7 @@ http.go()
     .at("https://iot.io/api/devices/");
 ```
 
-Just remember, this is only the beginning. These libraries will be continuously improved and updated.
+Just remember, *this is only the beginning*. These libraries will be continuously improved and updated.
 
 ## Requirements
 
