@@ -14,7 +14,7 @@ Alchemy [![Build Status](https://travis-ci.org/SirWellington/alchemy.svg)](https
 
 
 # Earth
-<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Earth/Earth.png" width="250">
+<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Earth/Earth.png" width="400">
 
 ### Alchemy is as *Solid* and *Dependable* as Earth.
 
@@ -27,7 +27,7 @@ We aim to provide you with libraries as **solid** and **dependable** as the floo
 This means that our code is thoroughly tested early and often.
 
 # Wind
-<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Wind/Wind.png" width="250">
+<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Wind/Wind.png" width="400">
 
 ### Alchemy is as *Swift* and *Undetectable* as Wind.
 
@@ -42,7 +42,7 @@ We believe great code helps you get the job done, without getting in the way.
 
 
 # Water
- <img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Water/Water.png" width="250">
+ <img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Water/Water.png" width="400">
 
 
 ### Alchemy is as *Fluid* and *Simple* as Water.
@@ -56,7 +56,7 @@ The best code is **simple** and **fluid** as a river flowing down a stream. It f
 
 
 # Fire
-<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Fire/Fire.png" width="250">
+<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Fire/Fire.png" width="400">
 
 ### Alchemy is as *Powerful* and *Invigorating* as Fire.
 
