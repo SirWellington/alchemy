@@ -14,17 +14,20 @@ Alchemy [![Build Status](https://travis-ci.org/SirWellington/alchemy.svg)](https
 
 
 # Earth
+<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Earth/Earth.png" width="400">
 
 ### Alchemy is as *Solid* and *Dependable* as Earth.
 
 ```java
-assertThrows(() -> database.save(user));
+assertThrows(() -> database.save(user))
+    .isInstanceOf(SQLException.class);
 ```
 
-We aim to provide you with libraries as **dependable** as the floor beneath your feet, that you implicitly trust to not collapse.
+We aim to provide you with libraries as **solid** and **dependable** as the floor beneath your feet that you implicitly trust to not collapse.
 This means that our code is thoroughly tested early and often.
 
 # Wind
+<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Wind/Wind.png" width="400">
 
 ### Alchemy is as *Swift* and *Undetectable* as Wind.
 
@@ -32,12 +35,15 @@ This means that our code is thoroughly tested early and often.
 String randomUsername = one(alphabeticStrings());
 ```
 
-We strive to be **breezy** yet **inconspicuous** like Southern California winds.
+We strive to be **breezy** yet **inconspicuous** like the air you breathe.
 
 We believe great code helps you get the job done, without getting in the way.
 
 
+
 # Water
+ <img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Water/Water.png" width="400">
+
 
 ### Alchemy is as *Fluid* and *Simple* as Water.
 ```java
@@ -46,24 +52,24 @@ checkThat(firstName, lastName, username)
     .are(stringWithLengthAtLeast(1));
 ```
 
-The best code is **simple** and **fluid** as, a river flowing down a stream. It flows as you would intuitively expect.
+The best code is **simple** and **fluid** as a river flowing down a stream. It flows as you would intuitively expect.
 
 
 # Fire
+<img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Fire/Fire.png" width="400">
 
 ### Alchemy is as *Powerful* and *Invigorating* as Fire.
 
 We want you to feel the power as it flows through your hands when you write code with us.
 
 ```java
-Device newDevice = http.begin()
-                       .body(device)
-                       .post()
-                       .expecting(String.class)
-                       .at("https://iot.io/api/devices/");
+Coffee myCoffee = http.go()
+					  .get()
+					  .expecting(Coffee.class)
+					  .at("http://aroma.coffee/orders?orderNumber=99");
 ```
 
-These Design Principles guide the code that we write. As such you will see that many of our projects use the Fluid Language Style to make writing code more expressive and much closer to its English counterpart. We also want you to feel **good** when you write code with us. We want you to feel **powerful**.
+These Design Principles guide the code that we write. As such you will see that many of our projects use the Fluid Language Style to make writing code more expressive and much closer to English. We also want you to feel **good** when you write code with us. We want you to feel **powerful**.
 
 
 # Project List
@@ -81,46 +87,47 @@ These Design Principles guide the code that we write. As such you will see that 
 
 ### Test your code
 
->TODO: Add better examples
-
 ```java
-//Generate random data
-String name = one(alphabeticStrings());
+//Runs the test 50 times
+@Repeat(50)
+@Test
+public void testDatabase()
+{
+    //Generate random data
+    String name = one(alphabeticStrings());
 
-//Quickly assert error conditions
-assertThrows(() -> database.save(name))
-    .isInstanceOf(IllegalArgumentException.class);
+    //Quickly assert error conditions
+    assertThrows(() -> database.save(name))
+        .isInstanceOf(SQLException.class);
+}
 ```
 
 ### Check your assumptions
 
 ```java
-public int getTotalPointsForUser(String user) throws BadArgumentException, HttpException
+public int getTotalPointsForUser(String user) throws HttpException
 {
     checkThat(user)
-        .throwing(BadArgumentException.class)
         .is(notNull())
         .is(nonEmptyString())
-        .is(stringWithLengthAtLeast(3));
+        .is(stringWithLengthAtLeast(3))
+        .is(userInDatabase()); //Custom Assertion
 
     //Proceed safely...
 }
 ```
 
 ### Call REST Services
+
 ```java
-
-
-http.go()
-    .post()
-    .body(device)
-    .expecting(String.class)
-    .onSuccess(id -> LOG.info("Device with id {} created", id))
-    .onFailure(ex -> LOG.error("Failed to create Device {}", device, ex))
-    .at("https://iot.io/api/devices/");
+Device newDevice = http.go()
+                       .post()
+                       .body(device)
+                       .expecting(Device.class)
+                       .at("https://iot.io/api/devices/");
 ```
 
-Just remember, this is only the beginning. These libraries will be continuously improved and updated.
+Just remember, *this is only the beginning*. These libraries will be continuously improved and updated.
 
 ## Requirements
 
