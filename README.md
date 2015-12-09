@@ -85,6 +85,14 @@ These Design Principles guide the code that we write. As such you will see that 
 
 ## Highlights
 
+### Generate Test Data
+
+```java
+String username = one(hexadecimalString());
+int zipCode = one(integers(10_000, 99_999));
+Computer computer = one(pojos(Computer.class));
+```
+
 ### Test your code
 
 ```java
