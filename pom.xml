@@ -15,8 +15,8 @@
     </description>
 
     <organization>
-        <name>SirWellington Tech</name>
-        <url>https://github.com/SirWellington</url>
+        <name>Aroma Tech</name>
+        <url>https://github.com/AromaTech</url>
     </organization>
 
     <developers>
@@ -24,7 +24,7 @@
             <name>Juan Wellington Moreno</name>
             <email>jwellington.moreno@gmail.com</email>
             <id>SirWellington</id>
-            <organizationUrl>https://github.com/SirWellington</organizationUrl>
+            <organizationUrl>https://github.com/AromaTech</organizationUrl>
             <roles>
                 <role>owner</role>
                 <role>developer</role>
