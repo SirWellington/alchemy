@@ -145,6 +145,9 @@ Just remember, *this is only the beginning*. These libraries will be continuousl
 ## Release Notes
 > These release notes are for the pom.xml
 
+### 1.3
++ Dependency Updates
+
 ### 1.2
 + Dependency Updates
 + Updates to Logo and Branding
