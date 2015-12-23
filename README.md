@@ -1,4 +1,4 @@
-Alchemy [![Build Status](https://travis-ci.org/SirWellington/alchemy.svg)](https://travis-ci.org/SirWellington/alchemy)
+Alchemy [![Build Status](http://jenkins.sirwellington.tech/job/Alchemy/badge/icon)](http://jenkins.sirwellington.tech/job/Alchemy/)
 ==============================================
 
 ![Alchemy Logo](https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Logo/Alchemy-Logo-v3-name.png)
@@ -85,6 +85,14 @@ These Design Principles guide the code that we write. As such you will see that 
 
 ## Highlights
 
+### Generate Test Data
+
+```java
+String username = one(hexadecimalString());
+int zipCode = one(integers(10_000, 99_999));
+Computer computer = one(pojos(Computer.class));
+```
+
 ### Test your code
 
 ```java
@@ -136,6 +144,13 @@ Just remember, *this is only the beginning*. These libraries will be continuousl
 
 ## Release Notes
 > These release notes are for the pom.xml
+
+### 1.3
++ Dependency Updates
+
+### 1.2
++ Dependency Updates
++ Updates to Logo and Branding
 
 ### 1.1
 + Dependency Updates
