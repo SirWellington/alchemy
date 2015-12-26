@@ -82,6 +82,15 @@
         </repository>
 
     </distributionManagement>
+    
+    <repositories>
+        
+        <repository>
+            <id>ossrh-snapshot</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </repository>
+        
+    </repositories>
 
     <dependencyManagement>
         <dependencies>
