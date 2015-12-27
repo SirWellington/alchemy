@@ -117,7 +117,7 @@
                 <version>1.3</version>
                 <scope>test</scope>
             </dependency>
-            <!--====================-->
+            <!--=======================-->
 
             <!--LOGGING-->
             <dependency>
@@ -133,7 +133,7 @@
                 <version>1.7.13</version>
                 <scope>test</scope>
             </dependency>
-            <!--====================-->
+            <!--=======================-->
 
             <!--APACHE HTTP-->
             <dependency>
@@ -141,7 +141,7 @@
                 <artifactId>httpclient</artifactId>
                 <version>4.5.1</version>
             </dependency>
-            <!--====================-->
+            <!--=======================-->
 
             <!--GOOGLE GUAVA-->
             <dependency>
@@ -149,7 +149,7 @@
                 <artifactId>guava</artifactId>
                 <version>19.0</version>
             </dependency>
-            <!--====================-->
+            <!--=======================-->
 
             <!--GOOGLE GSON-->
             <dependency>
@@ -157,7 +157,7 @@
                 <artifactId>gson</artifactId>
                 <version>2.5</version>
             </dependency>
-            <!--====================-->
+            <!--=======================-->
 
             <!--APACHE THRIFT-->
             <dependency>
@@ -165,7 +165,7 @@
                 <artifactId>libthrift</artifactId>
                 <version>0.9.3</version>
             </dependency>
-            <!--====================-->
+            <!--=======================-->
 
 
         </dependencies>
