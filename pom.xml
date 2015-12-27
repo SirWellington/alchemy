@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    
+
     <groupId>tech.sirwellington.alchemy</groupId>
     <artifactId>alchemy</artifactId>
     <version>1.4-SNAPSHOT</version>
@@ -58,7 +58,7 @@
     </prerequisites>
 
     <!-- END OF POM METADATA -->
-    
+
     <properties>
 
         <!--Java Compiler Properties-->
@@ -83,20 +83,22 @@
         </repository>
 
     </distributionManagement>
-    
+
     <repositories>
-        
+
         <repository>
             <id>ossrh-snapshot</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </repository>
-        
+
     </repositories>
 
     <dependencyManagement>
         <dependencies>
 
+            <!--=======================-->
             <!--UNIT TESTING-->
+            <!--=======================-->
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
@@ -117,15 +119,17 @@
                 <version>1.3</version>
                 <scope>test</scope>
             </dependency>
-            <!--=======================-->
 
+
+            <!--=======================-->
             <!--LOGGING-->
+            <!--=======================-->
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
                 <version>1.7.13</version>
             </dependency>
-            
+
             <!--Simple Logger for Test Runs-->
             <dependency>
                 <groupId>org.slf4j</groupId>
@@ -133,40 +137,46 @@
                 <version>1.7.13</version>
                 <scope>test</scope>
             </dependency>
-            <!--=======================-->
 
+
+            <!--=======================-->
             <!--APACHE HTTP-->
+            <!--=======================-->
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
                 <version>4.5.1</version>
             </dependency>
-            <!--=======================-->
 
+
+            <!--=======================-->
             <!--GOOGLE GUAVA-->
+            <!--=======================-->
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>19.0</version>
             </dependency>
-            <!--=======================-->
 
+
+            <!--=======================-->
             <!--GOOGLE GSON-->
+            <!--=======================-->
             <dependency>
                 <groupId>com.google.code.gson</groupId>
                 <artifactId>gson</artifactId>
                 <version>2.5</version>
             </dependency>
-            <!--=======================-->
 
+
+            <!--=======================-->
             <!--APACHE THRIFT-->
+            <!--=======================-->
             <dependency>
                 <groupId>org.apache.thrift</groupId>
                 <artifactId>libthrift</artifactId>
                 <version>0.9.3</version>
             </dependency>
-            <!--=======================-->
-
 
         </dependencies>
     </dependencyManagement>
