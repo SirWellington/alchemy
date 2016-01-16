@@ -1,12 +1,11 @@
 Alchemy [![Build Status](http://jenkins.sirwellington.tech/job/Alchemy/badge/icon)](http://jenkins.sirwellington.tech/job/Alchemy/)
 ==============================================
 
-![Alchemy Logo](https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Logo/Alchemy-Logo-v3-name.png)
+![Alchemy Logo](https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Logo/Alchemy-Logo-v7.png)
 
 
-## Making Java *fun* again.
-
-
+## Making Java *fun* again
+Your kit for clean Java.
 
 # Alchemy Design
 

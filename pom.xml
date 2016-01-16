@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    
+
     <groupId>tech.sirwellington.alchemy</groupId>
     <artifactId>alchemy</artifactId>
-    <version>1.3</version>
+    <version>1.4</version>
     <name>${project.artifactId}</name>
     <packaging>pom</packaging>
 
@@ -15,8 +15,8 @@
     </description>
 
     <organization>
-        <name>SirWellington Tech</name>
-        <url>https://github.com/SirWellington</url>
+        <name>Aroma Tech</name>
+        <url>https://github.com/AromaTech</url>
     </organization>
 
     <developers>
@@ -24,7 +24,7 @@
             <name>Juan Wellington Moreno</name>
             <email>jwellington.moreno@gmail.com</email>
             <id>SirWellington</id>
-            <organizationUrl>https://github.com/SirWellington</organizationUrl>
+            <organizationUrl>https://github.com/AromaTech</organizationUrl>
             <roles>
                 <role>owner</role>
                 <role>developer</role>
@@ -58,7 +58,7 @@
     </prerequisites>
 
     <!-- END OF POM METADATA -->
-    
+
     <properties>
 
         <!--Java Compiler Properties-->
@@ -69,6 +69,7 @@
     </properties>
 
 
+    <!--REPOSITORIES-->
     <distributionManagement>
 
         <snapshotRepository>
@@ -83,10 +84,21 @@
 
     </distributionManagement>
 
+    <repositories>
+
+        <repository>
+            <id>ossrh-snapshot</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </repository>
+
+    </repositories>
+
     <dependencyManagement>
         <dependencies>
 
-            <!--Unit Testing Libraries-->
+            <!--=======================-->
+            <!--UNIT TESTING-->
+            <!--=======================-->
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
@@ -107,13 +119,6 @@
                 <version>1.3</version>
                 <scope>test</scope>
             </dependency>
-
-            <!--Logging-->
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-api</artifactId>
-                <version>1.7.13</version>
-            </dependency>
             
             <!--Simple Logger for Test Runs-->
             <dependency>
@@ -123,34 +128,55 @@
                 <scope>test</scope>
             </dependency>
 
-            <!--Apache HTTP Client-->
+
+            <!--=======================-->
+            <!--LOGGING-->
+            <!--=======================-->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.13</version>
+            </dependency>
+
+
+            <!--=======================-->
+            <!--APACHE HTTP-->
+            <!--=======================-->
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
                 <version>4.5.1</version>
             </dependency>
 
-            <!--Google Guava-->
+
+            <!--=======================-->
+            <!--GOOGLE GUAVA-->
+            <!--=======================-->
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>19.0</version>
             </dependency>
-            
-            <!--Google GSON-->
+
+
+            <!--=======================-->
+            <!--GOOGLE GSON-->
+            <!--=======================-->
             <dependency>
                 <groupId>com.google.code.gson</groupId>
                 <artifactId>gson</artifactId>
                 <version>2.5</version>
             </dependency>
 
-            <!--Apache Thrift-->
+
+            <!--=======================-->
+            <!--APACHE THRIFT-->
+            <!--=======================-->
             <dependency>
                 <groupId>org.apache.thrift</groupId>
                 <artifactId>libthrift</artifactId>
                 <version>0.9.3</version>
             </dependency>
-
 
         </dependencies>
     </dependencyManagement>
