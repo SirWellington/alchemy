@@ -80,6 +80,7 @@ These Design Principles guide the code that we write. As such you will see that 
 | [Alchemy Generator](https://github.com/SirWellington/alchemy-generator)     | Generate Data
 | [Alchemy Test](https://github.com/SirWellington/alchemy-test)               | Test your code
 | [Alchemy HTTP](https://github.com/SirWellington/alchemy-http)               | Call REST Services
+| [Alchemy HTTP Mock] (https://github.com/SirWellington/alchemy-http-mock)    | Test your HTTP Code
 
 
 ## Highlights
