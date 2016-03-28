@@ -1,4 +1,4 @@
-Alchemy [![Build Status](http://jenkins.sirwellington.tech/job/Alchemy/badge/icon)](http://jenkins.sirwellington.tech/job/Alchemy/)
+Alchemy [![Build Status](http://jenkins.redroma.tech/job/Alchemy/badge/icon)](http://jenkins.redroma.tech/job/Alchemy/)
 ==============================================
 
 ![Alchemy Logo](https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Logo/Alchemy-Logo-v7.png)
