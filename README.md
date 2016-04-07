@@ -1,6 +1,8 @@
 Alchemy [![Build Status](http://jenkins.redroma.tech/job/Alchemy/badge/icon)](http://jenkins.redroma.tech/job/Alchemy/)
 ==============================================
 
+[![Join the chat at https://gitter.im/SirWellington/alchemy](https://badges.gitter.im/SirWellington/alchemy.svg)](https://gitter.im/SirWellington/alchemy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ![Alchemy Logo](https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Logo/Alchemy-Logo-v7.png)
 
 
