@@ -11,13 +11,13 @@ Your kit for clean Java.
 
 # Alchemy Design
 
-#### We take our inspiration from Mother Nature, specifically the four elements of nature. We call this, **Alchemy Design**.
+#### We take our inspiration from Mother Nature, specifically the four elements of nature. We call this **Alchemy Design**.
 
 
 # Earth
 <img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Earth/Earth.png" width="400">
 
-### Alchemy is as *Solid* and *Dependable* as Earth.
+### Alchemy is *Solid* and *Dependable* like the Earth.
 
 ```java
 assertThrows(() -> database.save(user))
@@ -30,7 +30,7 @@ This means that our code is thoroughly tested early and often.
 # Wind
 <img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Wind/Wind.png" width="400">
 
-### Alchemy is as *Swift* and *Undetectable* as Wind.
+### Alchemy is *Swift* and *Undetectable* like Wind.
 
 ```java
 String randomUsername = one(alphabeticStrings());
@@ -46,7 +46,7 @@ We believe great code helps you get the job done, without getting in the way.
  <img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Water/Water.png" width="400">
 
 
-### Alchemy is as *Fluid* and *Simple* as Water.
+### Alchemy is *Fluid* and *Simple* like Water.
 ```java
 checkThat(firstName, lastName, username)
     .are(nonEmptyString())
@@ -59,7 +59,7 @@ The best code is **simple** and **fluid** as a river flowing down a stream. It f
 # Fire
 <img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Fire/Fire.png" width="400">
 
-### Alchemy is as *Powerful* and *Invigorating* as Fire.
+### Alchemy is *Powerful* and *Invigorating* like Fire.
 
 We want you to feel the power as it flows through your hands when you write code with us.
 
@@ -82,7 +82,7 @@ These Design Principles guide the code that we write. As such you will see that 
 | [Alchemy Generator](https://github.com/SirWellington/alchemy-generator)     | Generate Data
 | [Alchemy Test](https://github.com/SirWellington/alchemy-test)               | Test your code
 | [Alchemy HTTP](https://github.com/SirWellington/alchemy-http)               | Call REST Services
-| [Alchemy HTTP Mock] (https://github.com/SirWellington/alchemy-http-mock)    | Test your HTTP Code
+| [Alchemy HTTP Mock](https://github.com/SirWellington/alchemy-http-mock)     | Test your HTTP Code
 
 
 ## Highlights
