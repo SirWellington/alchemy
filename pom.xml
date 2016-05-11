@@ -4,7 +4,7 @@
 
     <groupId>tech.sirwellington.alchemy</groupId>
     <artifactId>alchemy</artifactId>
-    <version>1.5</version>
+    <version>1.6-SNAPSHOT</version>
     <name>${project.artifactId}</name>
     <packaging>pom</packaging>
 
@@ -121,7 +121,7 @@
                 <version>1.3</version>
                 <scope>test</scope>
             </dependency>
-            
+
             <!--Simple Logger for Test Runs-->
             <dependency>
                 <groupId>org.slf4j</groupId>
