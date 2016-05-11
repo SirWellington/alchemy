@@ -79,6 +79,7 @@ These Design Principles guide the code that we write. As such you will see that 
 | -----| ----- |
 | [Alchemy Annotations](https://github.com/SirWellington/alchemy-annotations) | Explicit Documentation              
 | [Alchemy Arguments](https://github.com/SirWellington/alchemy-arguments)     | Check your assumptions    
+| [Alchemy Collections](https://github.com/SirWellington/alchemy-collections) | Collect Yo'self    
 | [Alchemy Generator](https://github.com/SirWellington/alchemy-generator)     | Generate Data
 | [Alchemy Test](https://github.com/SirWellington/alchemy-test)               | Test your code
 | [Alchemy HTTP](https://github.com/SirWellington/alchemy-http)               | Call REST Services
@@ -143,25 +144,6 @@ Just remember, *this is only the beginning*. These libraries will be continuousl
 
 + Java 8
 + Maven
-
-## Release Notes
-> These release notes are for the pom.xml
-
-### 1.3
-+ Dependency Updates
-
-### 1.2
-+ Dependency Updates
-+ Updates to Logo and Branding
-
-### 1.1
-+ Dependency Updates
-+ Adding custom Javadoc Styling
-+ Adding Logo and Branding
-
-### 1.0
-+ Initial Release
-
 
 ## License
 
