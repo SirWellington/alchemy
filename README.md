@@ -1,5 +1,7 @@
-Alchemy [![Build Status](http://jenkins.sirwellington.tech/job/Alchemy/badge/icon)](http://jenkins.sirwellington.tech/job/Alchemy/)
+Alchemy [![Build Status](http://jenkins.redroma.tech/job/Alchemy/badge/icon)](http://jenkins.redroma.tech/job/Alchemy/) [![Join the chat at https://gitter.im/SirWellington/alchemy](https://badges.gitter.im/SirWellington/alchemy.svg)](https://gitter.im/SirWellington/alchemy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ==============================================
+
+
 
 ![Alchemy Logo](https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Logo/Alchemy-Logo-v7.png)
 
@@ -80,6 +82,7 @@ These Design Principles guide the code that we write. As such you will see that 
 | [Alchemy Generator](https://github.com/SirWellington/alchemy-generator)     | Generate Data
 | [Alchemy Test](https://github.com/SirWellington/alchemy-test)               | Test your code
 | [Alchemy HTTP](https://github.com/SirWellington/alchemy-http)               | Call REST Services
+| [Alchemy HTTP Mock] (https://github.com/SirWellington/alchemy-http-mock)    | Test your HTTP Code
 
 
 ## Highlights
