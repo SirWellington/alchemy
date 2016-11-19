@@ -1,9 +1,8 @@
-Alchemy [![Build Status](http://jenkins.redroma.tech/job/Alchemy/badge/icon)](http://jenkins.redroma.tech/job/Alchemy/) [![Join the chat at https://gitter.im/SirWellington/alchemy](https://badges.gitter.im/SirWellington/alchemy.svg)](https://gitter.im/SirWellington/alchemy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+Alchemy [![Build Status](http://jenkins.redroma.tech/job/Alchemy/badge/icon)](http://jenkins.redroma.tech/job/Alchemy/)  [![Join the chat at https://gitter.im/SirWellington/alchemy](https://badges.gitter.im/SirWellington/alchemy.svg)](https://gitter.im/SirWellington/alchemy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Aroma Enabled](http://brand.redroma.tech/Badges/Aroma-Badge.svg)](http://aroma.redroma.tech/)
 ==============================================
 
 
-
-![Alchemy Logo](https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Logo/Alchemy-Logo-v7.png)
+![Alchemy Logo](https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Logo/Alchemy-Logo-v7-name.png)
 
 
 ## Making Java *fun* again
@@ -11,13 +10,13 @@ Your kit for clean Java.
 
 # Alchemy Design
 
-#### We take our inspiration from Mother Nature, specifically the four elements of nature. We call this, **Alchemy Design**.
+#### We take our inspiration from Mother Nature, specifically the four elements of nature. We call this **Alchemy Design**.
 
 
 # Earth
 <img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Earth/Earth.png" width="400">
 
-### Alchemy is as *Solid* and *Dependable* as Earth.
+### Alchemy is *Solid* and *Dependable* like the Earth.
 
 ```java
 assertThrows(() -> database.save(user))
@@ -30,7 +29,7 @@ This means that our code is thoroughly tested early and often.
 # Wind
 <img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Wind/Wind.png" width="400">
 
-### Alchemy is as *Swift* and *Undetectable* as Wind.
+### Alchemy is *Swift* and *Undetectable* like Wind.
 
 ```java
 String randomUsername = one(alphabeticStrings());
@@ -46,7 +45,7 @@ We believe great code helps you get the job done, without getting in the way.
  <img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Water/Water.png" width="400">
 
 
-### Alchemy is as *Fluid* and *Simple* as Water.
+### Alchemy is *Fluid* and *Simple* like Water.
 ```java
 checkThat(firstName, lastName, username)
     .are(nonEmptyString())
@@ -59,7 +58,7 @@ The best code is **simple** and **fluid** as a river flowing down a stream. It f
 # Fire
 <img src="https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Elements/Fire/Fire.png" width="400">
 
-### Alchemy is as *Powerful* and *Invigorating* as Fire.
+### Alchemy is *Powerful* and *Invigorating* like Fire.
 
 We want you to feel the power as it flows through your hands when you write code with us.
 
@@ -79,10 +78,11 @@ These Design Principles guide the code that we write. As such you will see that 
 | -----| ----- |
 | [Alchemy Annotations](https://github.com/SirWellington/alchemy-annotations) | Explicit Documentation              
 | [Alchemy Arguments](https://github.com/SirWellington/alchemy-arguments)     | Check your assumptions    
+| [Alchemy Collections](https://github.com/SirWellington/alchemy-collections) | Collect Yo'self    
 | [Alchemy Generator](https://github.com/SirWellington/alchemy-generator)     | Generate Data
 | [Alchemy Test](https://github.com/SirWellington/alchemy-test)               | Test your code
 | [Alchemy HTTP](https://github.com/SirWellington/alchemy-http)               | Call REST Services
-| [Alchemy HTTP Mock] (https://github.com/SirWellington/alchemy-http-mock)    | Test your HTTP Code
+| [Alchemy HTTP Mock](https://github.com/SirWellington/alchemy-http-mock)     | Test your HTTP Code
 
 
 ## Highlights
@@ -143,25 +143,6 @@ Just remember, *this is only the beginning*. These libraries will be continuousl
 
 + Java 8
 + Maven
-
-## Release Notes
-> These release notes are for the pom.xml
-
-### 1.3
-+ Dependency Updates
-
-### 1.2
-+ Dependency Updates
-+ Updates to Logo and Branding
-
-### 1.1
-+ Dependency Updates
-+ Adding custom Javadoc Styling
-+ Adding Logo and Branding
-
-### 1.0
-+ Initial Release
-
 
 ## License
 
