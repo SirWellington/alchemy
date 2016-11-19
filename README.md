@@ -2,7 +2,6 @@ Alchemy [![Build Status](http://jenkins.redroma.tech/job/Alchemy/badge/icon)](ht
 ==============================================
 
 
-
 ![Alchemy Logo](https://raw.githubusercontent.com/SirWellington/alchemy/develop/Graphics/Logo/Alchemy-Logo-v7-name.png)
 
 
