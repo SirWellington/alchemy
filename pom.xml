@@ -9,7 +9,6 @@
     <name>${project.artifactId}</name>
     <packaging>pom</packaging>
 
-
     <url>https://github.com/SirWellington/alchemy</url>
     <description>
         The Alchemy Collection; Making Java fun again.
