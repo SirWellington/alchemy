@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>tech.sirwellington.alchemy</groupId>
@@ -68,6 +69,8 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
+        <!--Kotlin Version-->
+        <kotlin.version>1.1.2-4</kotlin.version>
     </properties>
 
 
@@ -122,11 +125,38 @@
                 <scope>test</scope>
             </dependency>
 
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-test-junit</artifactId>
+                <version>${kotlin.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.natpryce</groupId>
+                <artifactId>hamkrest</artifactId>
+                <version>1.4.0.0</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.nhaarman</groupId>
+                <artifactId>mockito-kotlin</artifactId>
+                <version>1.4.0</version>
+                <scope>test</scope>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>kotlin-stdlib</artifactId>
+                        <groupId>org.jetbrains.kotlin</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
             <!--Simple Logger for Test Runs-->
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-simple</artifactId>
-                <version>1.7.24</version>
+                <version>1.7.25</version>
                 <scope>test</scope>
             </dependency>
 
@@ -180,7 +210,24 @@
                 <version>0.10.0</version>
             </dependency>
 
+
+            <!--=======================-->
+            <!--KOTLIN-->
+            <!--=======================-->
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-stdlib-jre7</artifactId>
+                <version>${kotlin.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-reflect</artifactId>
+                <version>${kotlin.version}</version>
+            </dependency>
+
         </dependencies>
+
     </dependencyManagement>
 
     <build>
@@ -199,7 +246,9 @@
                             <goal>wget</goal>
                         </goals>
                         <configuration>
-                            <url>https://raw.githubusercontent.com/SirWellington/alchemy/master/javadoc-style-sheet.css</url>
+                            <url>
+                                https://raw.githubusercontent.com/SirWellington/alchemy/master/javadoc-style-sheet.css
+                            </url>
                             <outputDirectory>${project.build.directory}/resources/css</outputDirectory>
                             <failOnError>false</failOnError>
                         </configuration>
