@@ -4,14 +4,16 @@ Overall document style
 */
 
 @import url('resources/fonts/dejavu.css');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Avenir|Inconsolata|Proxima+Nova');
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 @import url(https://fonts.googleapis.com/css?family=Play);
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
 
 body {
     background-color:#ffffff;
     color:#353833;
-    font-family:'Play', Arial, Helvetica, sans-serif;
+    font-family:'Proxima Nova', Arial, Helvetica, sans-serif;
     font-size:16px;
     margin:0;
 }
@@ -35,7 +37,7 @@ a[name]:hover {
     color:#353833;
 }
 pre {
-    font-family:'Ubuntu Mono', monospace;
+    font-family:'Inconsolata', monospace;
     font-size:14px;
 }
 h1 {
@@ -61,19 +63,19 @@ ul {
     list-style-type:disc;
 }
 code, tt {
-    font-family:'Ubuntu Mono', monospace;
+    font-family:'Inconsolata', monospace;
     font-size:14px;
     padding-top:4px;
     margin-top:8px;
     line-height:1.4em;
 }
 dt code {
-    font-family:'Ubuntu Mono', monospace;
+    font-family:'Inconsolata', monospace;
     font-size:14px;
     padding-top:4px;
 }
 table tr td dt code {
-    font-family:'Ubuntu Mono', monospace;
+    font-family:'Inconsolata', monospace;
     font-size:14px;
     vertical-align:top;
     padding-top:4px;
@@ -291,7 +293,7 @@ Page layout container styles
 .contentContainer .description dl dd, .contentContainer .details dl dd, .serializedFormContainer dl dd {
     margin:5px 0 10px 0px;
     font-size:14px;
-    font-family:'Ubuntu Mono',monospace;
+    font-family:'Inconsolata',monospace;
 }
 .serializedFormContainer dl.nameValue dt {
     margin-left:1px;
@@ -486,13 +488,13 @@ th.colFirst, th.colLast, th.colOne, .constantsSummary th {
 }
 td.colFirst, th.colFirst {
     white-space:nowrap;
-    font-size:13px;
+    font-size:14px;
 }
 td.colLast, th.colLast {
-    font-size:13px;
+    font-size:14px;
 }
 td.colOne, th.colOne {
-    font-size:13px;
+    font-size:14px;
 }
 .overviewSummary td.colFirst, .overviewSummary th.colFirst,
 .useSummary td.colFirst, .useSummary th.colFirst,
@@ -535,7 +537,7 @@ ul.blockList ul.blockList ul.blockList li.blockList h3 {
 
 div.block {
     font-size:14px;
-    font-family:'Ubuntu', "Play", Georgia, "Times New Roman", Times, serif;
+    font-family:'Avenir', Georgia, "Times New Roman", Times, serif;
 }
 
 td.colLast div {
