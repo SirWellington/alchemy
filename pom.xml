@@ -5,7 +5,7 @@
 
     <groupId>tech.sirwellington.alchemy</groupId>
     <artifactId>alchemy</artifactId>
-    <version>2.3-SNAPSHOT</version>
+    <version>2.3</version>
     <name>${project.artifactId}</name>
     <packaging>pom</packaging>
 
