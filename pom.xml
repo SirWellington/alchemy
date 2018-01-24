@@ -69,7 +69,7 @@
         <maven.compiler.target>1.7</maven.compiler.target>
 
         <!--Kotlin Version-->
-        <kotlin.version>1.2.10</kotlin.version>
+        <kotlin.version>1.2.20</kotlin.version>
     </properties>
 
 
