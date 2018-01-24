@@ -358,6 +358,7 @@
                 <!--=======================-->
                 <!--KOTLIN-->
                 <!--=======================-->
+
                 <plugin>
                     <groupId>org.jetbrains.kotlin</groupId>
                     <artifactId>kotlin-maven-plugin</artifactId>
@@ -388,6 +389,24 @@
                                     <sourceDir>${project.basedir}/src/test/java</sourceDir>
                                 </sourceDirs>
                             </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+
+
+                <!--JAVADOC PLUGIN-->
+                <plugin>
+                    <groupId>org.jetbrains.dokka</groupId>
+                    <artifactId>dokka-maven-plugin</artifactId>
+                    <version>0.9.15</version>
+                    <executions>
+                        <execution>
+                            <phase>process-sources</phase>
+                            <goals>
+                                <goal>dokka</goal>
+                                <goal>javadoc</goal>
+                                <goal>javadocJar</goal>
+                            </goals>
                         </execution>
                     </executions>
                 </plugin>
