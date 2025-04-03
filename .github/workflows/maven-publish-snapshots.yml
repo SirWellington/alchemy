@@ -33,3 +33,5 @@ jobs:
 
       - name: Publish SNAPSHOT
         run: mvn --batch-mode clean deploy -P release
+        env:
+          MAVEN_GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
