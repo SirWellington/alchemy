@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  publish:
+  publish-dry-run:
     runs-on: ubuntu-latest
     permissions:
       contents: read
