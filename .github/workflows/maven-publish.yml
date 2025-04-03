@@ -21,8 +21,8 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
           server-id: central
-          server-username: ${{ secrets.CENTRAL_USERNAME }}
-          server-password: ${{ secrets.CENTRAL_TOKEN }}
+          server-username: CENTRAL_USERNAME
+          server-password: CENTRAL_TOKEN
           gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
           gpg-passphrase: ${{ secrets.GPG_PASSPHRASE }}
 
@@ -36,3 +36,6 @@ jobs:
 
       - name: Build and Deploy
         run: mvn --batch-mode clean deploy -Dgpg.passphrase=${{ secrets.GPG_PASSPHRASE }} -P release
+        env:
+          CENTRAL_USERNAME: ${{ secrets.OSSRH_USERNAME }}
+          CENTRAL_TOKEN: ${{ secrets.OSSRH_TOKEN }}
