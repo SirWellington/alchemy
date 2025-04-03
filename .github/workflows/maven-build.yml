@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    name: Build, Test, and Sign (No Deploy)
+    name: Build, Test, and Verify
     runs-on: ubuntu-latest
 
     steps:
