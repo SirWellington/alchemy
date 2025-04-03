@@ -27,7 +27,7 @@ jobs:
           gpg-passphrase: ${{ secrets.GPG_PASSPHRASE }}
 
       - name: Build and Deploy
-        run: mvn --batch-mode clean deploy -P release
+        run: mvn --batch-mode clean deploy -Dgpg.passphrase=${{ secrets.GPG_PASSPHRASE }} -P release
         env:
           CENTRAL_USERNAME: ${{ secrets.OSSRH_USERNAME }}
           CENTRAL_TOKEN: ${{ secrets.OSSRH_TOKEN }}
