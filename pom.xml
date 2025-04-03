@@ -63,10 +63,6 @@
 
     <inceptionYear>2015</inceptionYear>
 
-    <prerequisites>
-        <maven>3.0.3</maven>
-    </prerequisites>
-
     <!-- END OF POM METADATA -->
 
     <properties>
@@ -246,6 +242,28 @@
     <build>
         <plugins>
 
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>3.5.0</version>
+                <executions>
+                    <execution>
+                        <id>enforce-maven</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireMavenVersion>
+                                    <version>[3.6.3,)</version>
+                                </requireMavenVersion>
+                            </rules>
+                            <fail>true</fail>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            
             <!--Download Javadoc Stylesheet-->
             <plugin>
                 <groupId>com.googlecode.maven-download-plugin</groupId>
