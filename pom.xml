@@ -20,7 +20,7 @@
 
     <groupId>tech.sirwellington.alchemy</groupId>
     <artifactId>alchemy</artifactId>
-    <version>2.16</version>
+    <version>2.17-SNAPSHOT</version>
     <name>${project.artifactId}</name>
     <packaging>pom</packaging>
 
@@ -90,12 +90,16 @@
 
     <!--REPOSITORIES-->
     <distributionManagement>
-
+        <!-- RELEASE -->
         <repository>
             <id>central</id>
             <url>https://central.sonatype.com/api/v1/publish</url>
         </repository>
-
+        <!-- SNAPSHOTS -->
+        <snapshotRepository>
+            <id>central</id>
+            <url>https://central.sonatype.com/api/v1/publish</url>
+        </snapshotRepository>
     </distributionManagement>
 
     <pluginRepositories>
