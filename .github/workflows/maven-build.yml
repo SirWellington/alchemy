@@ -1,4 +1,4 @@
-name: Maven Build (No Publish)
+name: Maven Build
 
 on:
   push:
