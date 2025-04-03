@@ -27,7 +27,7 @@ jobs:
           gpg-passphrase: ${{ secrets.GPG_PASSPHRASE }}
 
       - name: Build and Deploy
-        run: mvn --batch-mode clean deploy -DdryRun=true -P release
+        run: mvn --batch-mode clean deploy -DdryRun=true -Dgpg.passphrase=${{ secrets.GPG_PASSPHRASE }} -P release
         env:
           MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
           MAVEN_PASSWORD: ${{ secrets.OSSRH_TOKEN }}
