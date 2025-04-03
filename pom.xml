@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright © 2019. Sir Wellington.
+  ~ Copyright © 2025. Sir Wellington.
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
   ~
@@ -28,11 +28,6 @@
     <description>
         The Alchemy Collection; Making Java fun again.
     </description>
-
-    <organization>
-        <name>RedRoma, Inc.</name>
-        <url>http://RedRoma.tech/</url>
-    </organization>
 
     <developers>
         <developer>
