@@ -22,7 +22,7 @@ jobs:
           server-password: ${{ secrets.OSSRH_TOKEN }}
           gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
           gpg-passphrase: ${{ secrets.GPG_PASSPHRASE }}
-
+      
       - name: Cache Maven packages
         uses: actions/cache@v3
         with:
