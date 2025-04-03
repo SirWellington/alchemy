@@ -64,9 +64,9 @@ We want you to feel the power as it flows through your hands when you write code
 
 ```java
 Coffee myCoffee = http.go()
-					  .get()
-					  .expecting(Coffee.class)
-					  .at("http://aroma.coffee/orders?orderNumber=99");
+		      .get()
+		      .expecting(Coffee.class)
+		      .at("http://aroma.coffee/orders?orderNumber=99");
 ```
 
 These Design Principles guide the code that we write. As such you will see that many of our projects use the Fluid Language Style to make writing code more expressive and much closer to English. We also want you to feel **good** when you write code with us. We want you to feel **powerful**.
