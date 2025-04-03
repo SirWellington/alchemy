@@ -22,6 +22,14 @@ jobs:
           server-password: ${{ secrets.CENTRAL_TOKEN }}
           gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
           gpg-passphrase: ${{ secrets.GPG_PASSPHRASE }}
+      
+      - name: Cache Maven packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2/repository
+          key: maven-${{ runner.os }}-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            maven-${{ runner.os }}-
 
       - name: Publish SNAPSHOT
         run: mvn --batch-mode clean deploy -P release -Dgpg.passphrase=${{ secrets.GPG_PASSPHRASE }}
