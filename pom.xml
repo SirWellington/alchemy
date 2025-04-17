@@ -233,12 +233,6 @@
             <!--=======================-->
             <dependency>
                 <groupId>org.jetbrains.kotlin</groupId>
-                <artifactId>kotlin-stdlib-jdk7</artifactId>
-                <version>${kotlin.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-stdlib-jdk8</artifactId>
                 <version>${kotlin.version}</version>
             </dependency>
@@ -292,7 +286,7 @@
                         </goals>
                         <configuration>
                             <url>
-                                https://raw.githubusercontent.com/SirWellington/alchemy/master/javadoc-style-sheet.css
+                                https://raw.githubusercontent.com/SirWellington/alchemy/develop/javadoc-style-sheet.css
                             </url>
                             <outputDirectory>${project.build.directory}/resources/css</outputDirectory>
                             <failOnError>false</failOnError>
