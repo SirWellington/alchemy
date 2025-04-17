@@ -102,6 +102,15 @@
 
     <dependencyManagement>
         <dependencies>
+            <!--=======================-->
+            <!--JAVAX-->
+            <!--=======================-->
+            <dependency>
+                <groupId>javax.xml.bind</groupId>
+                <artifactId>jaxb-api</artifactId>
+                <version>2.3.1</version>
+                <scope>provided</scope>
+            </dependency>
 
             <!--=======================-->
             <!--UNIT TESTING-->
