@@ -1,4 +1,4 @@
-Alchemy [![Build Status](http://jenkins.redroma.tech/job/Alchemy/badge/icon)](http://jenkins.redroma.tech/job/Alchemy/)  [![Join the chat at https://gitter.im/SirWellington/alchemy](https://badges.gitter.im/SirWellington/alchemy.svg)](https://gitter.im/SirWellington/alchemy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Aroma Enabled](http://brand.redroma.tech/Badges/Aroma-Badge.svg)](http://aroma.redroma.tech/)
+Alchemy [![Maven Build](https://github.com/SirWellington/alchemy/actions/workflows/maven-build.yml/badge.svg)](https://github.com/SirWellington/alchemy/actions/workflows/maven-build.yml)  [![Join the chat at https://gitter.im/SirWellington/alchemy](https://badges.gitter.im/SirWellington/alchemy.svg)](https://gitter.im/SirWellington/alchemy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ==============================================
 
 
