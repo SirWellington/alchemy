@@ -222,6 +222,8 @@
                             </url>
                             <outputDirectory>${project.build.directory}/resources/css</outputDirectory>
                             <failOnError>false</failOnError>
+                            <skipCache>true</skipCache>
+                            <overwrite>true</overwrite>
                         </configuration>
                     </execution>
                 </executions>
