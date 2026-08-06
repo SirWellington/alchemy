@@ -90,33 +90,35 @@ These Design Principles guide the code that we write. As such you will see that 
 ### Generate Test Data
 
 ```java
-String username = one(hexadecimalString());
-int zipCode = one(integers(10_000, 99_999));
-Computer computer = one(pojos(Computer.class));
+var username = one(hexadecimalString());
+var zipCode = one(integers(10_000, 99_999));
+var computer = one(pojos(Computer.class));
 ```
 
 ### Test your code
 
 ```java
-//Runs the test 50 times
-@Repeat(50)
-@Test
-public void testDatabase()
-{
-    //Generate random data
-    String name = one(alphabeticStrings());
+@AlchemyTest
+class MyTestClass {
 
-    //Quickly assert error conditions
+// Generates a random string on each run
+@GenerateString
+String name;
+
+@Test
+public void testDatabase() {
+     //Quickly assert error conditions
     assertThrows(() -> database.save(name))
         .isInstanceOf(SQLException.class);
+}
+
 }
 ```
 
 ### Check your assumptions
 
 ```java
-public int getTotalPointsForUser(String user) throws HttpException
-{
+public int getTotalPointsForUser(String user) throws HttpException {
     checkThat(user)
         .is(notNull())
         .is(nonEmptyString())
@@ -130,11 +132,11 @@ public int getTotalPointsForUser(String user) throws HttpException
 ### Call REST Services
 
 ```java
-Device newDevice = http.go()
-                       .post()
-                       .body(device)
-                       .expecting(Device.class)
-                       .at("https://iot.io/api/devices/");
+var newDevice = http.go()
+                    .post()
+                    .body(device)
+                    .expecting(Device.class)
+                    .at("https://iot.io/api/devices/");
 ```
 
 Just remember, *this is only the beginning*. These libraries will be continuously improved and updated.
