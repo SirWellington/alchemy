@@ -63,7 +63,7 @@ The best code is **simple** and **fluid** as a river flowing down a stream. It f
 We want you to feel the power as it flows through your hands when you write code with us.
 
 ```java
-Coffee myCoffee = http.go()
+var myCoffee = http.go()
 		      .get()
 		      .expecting(Coffee.class)
 		      .at("http://aroma.coffee/orders?orderNumber=99");
